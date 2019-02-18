@@ -1,4 +1,22 @@
-//    Mixins
+
+
+
+/*=================== mixin start ====================*/
+
+@mixin placeholder {
+	&.placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}
 
 @mixin transition($args: all 0.3s ease 0s) {
 	-webkit-transition: $args;
@@ -26,23 +44,6 @@
 	-moz-transition-property: $args1, $args2;
 	-o-transition-property: $args1, $args2;
 	transition-property: $args1, $args2;
-}
-
-// Placeholder Mixins
-
-@mixin placeholder {
-	&.placeholder {
-		@content;
-	}
-	&:-moz-placeholder {
-		@content;
-	}
-	&::-moz-placeholder {
-		@content;
-	}
-	&::-webkit-input-placeholder {
-		@content;
-	}
 }
 
 @mixin gradient($deg, $args1,$args2) {
@@ -163,3 +164,4 @@
 		@content;
 	}
 }
+/*=================== mixin end ====================*/

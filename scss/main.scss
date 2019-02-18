@@ -1,26 +1,20 @@
-
-@import "bootstrap/functions";
-@import "bootstrap/variables";
-
-//
-// Grid mixins
-//
-
-@import "bootstrap/mixins/breakpoints";
-
-
-// including variables and mixins
 @import "theme/variables";
 @import "theme/mixins";
-@import "theme/flexbox";
 @import "theme/reset";
-@import "theme/predefined";
-
-
-// Custom Scss 
-@import "theme/flaticon";
 @import "theme/header";
+@import "theme/responsive";
+@import "theme/section-intro";
 @import "theme/home";
+@import "theme/btn";
 @import "theme/blog";
-@import "theme/elements";
+@import "theme/contact";
+@import "theme/category";
+@import "theme/confirmation";
+@import "theme/tracking";
+@import "theme/checkout";
+@import "theme/login";
+@import "theme/instagram";
+@import "theme/cart";
+@import "theme/single-product";
 @import "theme/footer";
+

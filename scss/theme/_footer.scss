@@ -1,119 +1,113 @@
-/* =================================== */
-
-/*  Footer Styles
-/* =================================== */
-
+/*============== footer-area css ===============*/
 .footer-area {
-    background: #0e1424;
-    .single-footer-widget {
-      @media (max-width: 991px) {
-        margin-bottom: 30px;
-      }
-      h4 {
-        color: #ffffff;
-        margin-bottom: 35px;
-        @media (max-width: 1024px) {
-          font-size: 18px;
-        }
-        @media (max-width: 991px) {
-          margin-bottom: 15px;
-        }
-      }
-      ul {
-        padding-left: 0;
-        li {
-          margin-bottom: 15px;
-          list-style: none;
-          a {
-            @include transition();
-            color: $text-color;
-            &:hover {
-              color: #ffffff;
-            }
-          }
-        }
-      }
-      .form-wrap {
-        margin-top: 25px;
-      }
-      input {
-        height: 40px;
-        border: none;
-        width: 80% !important;
-        font-weight: 300;
-        background: #334f6c;
-        color: #ffffff;
-        border-radius: 0;
-        font-size: 14px;
-        padding: 10px;
-        padding-left: 20px;
-        &:focus {
-          outline: none;
-          box-shadow: none;
-        }
-      }
-      .click-btn {
-        background: $white;
-        background-size: 200% auto;
-        color: $title-color;
-        border-radius: 0;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-        padding: 8px 20px;
-        margin-left: -60px;
-        font-size: 15px;
-        text-transform: capitalize;
-        font-family: $title-font;
-        font-weight: 500;
-        border: 0;
-        @include transition();
-        span {
-          font-weight: 500;
-        }
-        &:focus {
-          outline: none;
-          box-shadow: none;
-        }
-        &:hover {
-          background-position: right center;
-        }
-      }
-    }
-    .footer-bottom {
-      margin-top: 50px;
-      @media (max-width: 991px) {
-        margin-top: 20px;
-      }
-      a {
-        color: $primary-color;
-      }
-      .footer-social {
-        text-align: right;
-        a {
-          background: #334f6c;
-          width: 20px;
-          width: 40px;
-          display: inline-table;
-          height: 40px;
-          text-align: center;
-          padding-top: 10px;
-          @include transition();
-          &:hover {
-            background: $primary-color;
-            i {
-              color: $title-color;
-            }
-          }
-        }
-        i {
-          color: #cccccc;
-          @include transition();
-        }
-        @media (max-width: 991px) {
-          text-align: left;
-          margin-top: 20px;
-        }
-      }
-    }
+	background: #002347;
+	padding: 50px 0px 50px;
+
+	@media(min-width: 1000px){
+		padding: 195px 0px 120px;
+	}
+}
+.single-footer-widget {
+	p {
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.instafeed {
+		margin-left: -5px;
+		margin-right: -5px;
+		li {
+			margin: 5px;
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6) {
+				@media (max-width: 1199px) and (min-width: 992px) {
+					display: none;
+				}
+			}
+		}
+	}
+	.sm-head {
+		color: $white;
+		margin-bottom: 0px;
+		span {
+			position: relative;
+			margin-left: -40px;
+			margin-right: 10px;
+			display: inline-block;
+			width: 28px;
+			height: 28px;
+			line-height: 28px;
+			text-align: center;
+			background: $primary-color;
+			color: #ffffff;
+			border-radius: 20px;
+		}
+	}
+}
+.tp_widgets {
+	.list {
+		li {
+			margin-bottom: 12px;
+			a {
+				color: #7b838a;
+				font-family: $text-font;
+
+				&:hover{
+					color: $primary-color;
+				}
+			}
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
   }
   
+  p{
+    color: #7b838a;
+  }
+}
+.footer_title {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500;
+	font-family: $title-font;
+	text-transform: capitalize;
+	color: #fff;
+	margin-bottom: 28px;
+	@media (max-width: 991px) {
+		margin-bottom: 10px;
+	}
+	&.large_title {
+		font-size: 36px;
+		font-weight: 600;
+		@media (max-width: 1199px) {
+			font-size: 18px;
+		}
+	}
+}
+.footer-bottom {
+	background: rgba(0, 35, 71, 0.9803921568627451);
+	padding: 32px;
+	.footer-text {
+		color: #fff;
+		margin-bottom: 0;
+		a {
+			color: $primary-color;
+			opacity: 1;
+		}
+	}
+}
+
+.footer-only{
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+
+	@media(min-width: 1000px){
+		padding-top: 115px !important;
+		padding-bottom: 115px !important;
+	}
+}
+
+//--------- end footer Area -------------//
